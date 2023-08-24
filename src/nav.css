@@ -42,10 +42,10 @@
 
 .main_header .container .search_box input {
     outline: none;
-    padding: 10px 30px;
+    padding: 10px 10px;
     border: 3px solid #0989ff;
     width: 300px;
-    color: #e2f2f7;
+    color: #010f1c;
 }
 
 .main_header .container .search_box button {
