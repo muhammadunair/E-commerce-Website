@@ -10,7 +10,7 @@ import { AiOutlineShoppingCart } from "react-icons/ai";
 import { BsEye } from "react-icons/bs";
 import { AiOutlineHeart } from "react-icons/ai";
 import Homeproduct from "./homeproduct";
-const Home = () => {
+const Home = ({ detail, view, close, setClose }) => {
   const [homeproduct, setHomeProduct] = useState(Homeproduct);
   return (
     <>
@@ -116,7 +116,7 @@ const Home = () => {
                       <li>
                         <AiOutlineShoppingCart />
                       </li>
-                      <li>
+                      <li onClick={() => view(curElm)}>
                         <BsEye />
                       </li>
                       <li>
@@ -142,8 +142,13 @@ const Home = () => {
           <div className="detail">
             <h4>LATEST TECHNOLOGY ADDED</h4>
             <h3>Apple ipad 10.2 9th Gen - 2021</h3>
-            <p> <BiDollar /> 986 </p>
-            <Link to="/product" className="link">Shop Now <BsArrowRight/></Link>
+            <p>
+              {" "}
+              <BiDollar /> 986{" "}
+            </p>
+            <Link to="/product" className="link">
+              Shop Now <BsArrowRight />
+            </Link>
           </div>
           <div className="img_box">
             <img src="image/slider-img.png" alt="image" />
